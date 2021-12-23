@@ -160,17 +160,20 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true">
+
         <Button
+            android:id="@+id/btnPurchase"
             android:layout_width="150dp"
             android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/Red"
             android:text="Purchase"
             android:textAllCaps="false"
-            android:backgroundTint="@color/Red"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="40dp"
-            android:layout_alignParentStart="true"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
         <Button
+            android:id="@+id/btnsell"
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Sell"
