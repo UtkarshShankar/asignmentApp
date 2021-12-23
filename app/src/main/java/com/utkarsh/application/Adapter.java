@@ -1,5 +1,6 @@
 package com.utkarsh.application;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,9 +13,11 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     List<Model> modelslist;
+    Context context;
 
-    public Adapter(List<Model> modelslist) {
+    public Adapter(List<Model> modelslist,Context context ) {
         this.modelslist = modelslist;
+        this.context= context;
     }
 
     @NonNull

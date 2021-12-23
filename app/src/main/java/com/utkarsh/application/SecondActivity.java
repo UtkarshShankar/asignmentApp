@@ -32,6 +32,6 @@ public class SecondActivity extends AppCompatActivity {
         quantity=findViewById(R.id.quantity_text);
 
         Date currentTime = Calendar.getInstance().getTime();
-        
+
     }
 }

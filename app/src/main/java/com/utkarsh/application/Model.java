@@ -1,8 +1,26 @@
 package com.utkarsh.application;
 
 public class Model {
-String date;
+    String date;
     String time;
+    String product;
+    String quantity;
+    String purchase_amt;
+    String sell_amt;
+
+    public Model() {
+    }
+
+    public Model(String date, String time, String product, String quantity, String purchase_amt, String sell_amt) {
+        this.date = date;
+        this.time = time;
+        this.product = product;
+        this.quantity = quantity;
+        this.purchase_amt = purchase_amt;
+        this.sell_amt = sell_amt;
+    }
+
+
 
     public String getDate() {
         return date;
@@ -52,8 +70,5 @@ String date;
         this.sell_amt = sell_amt;
     }
 
-    String product;
-    String quantity;
-    String purchase_amt;
-    String sell_amt;
+
 }
