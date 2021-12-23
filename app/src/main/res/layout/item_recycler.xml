@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/3/2021"
+            android:textColor="@color/brown"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/date"
+            android:layout_marginStart="5dp"
+            android:text="5:40 PM"
+            android:textColor="@color/brown" />
+
+        <TextView
+            android:id="@+id/Product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginTop="5dp"
+            android:text="Pizza"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/Quantiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 * 1 piece"
+            android:textColor="@color/brown"
+            android:layout_below="@id/Product"/>
+
+        <TextView
+            android:id="@+id/amtPurchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/date"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Red"/>
+        <TextView
+            android:id="@+id/amtSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/date"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/Green"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
