@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Application</string>
+    <string-array name="units">
+        <item>Piece</item>
+        <item>KG</item>
+        <item>Gram</item>
+        <item>Ml</item>
+        <item>Liter</item>
+        <item>mm</item>
+        <item>Inch</item>
+        <item>Feet</item>
+        <item>Meter</item>
+        <item>Sq FT</item>
+        <item>Sq Meter</item>
+        <item>KM</item>
+    </string-array>
 </resources>

@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
     TextView totalPurchase,totalSell;
     LinearLayoutManager linearLayoutManager=new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL,false);
 
-    private static String JSON_URL="https://82b4-2405-201-3017-1073-a1a4-d584-6ee2-f5aa.ngrok.io/api/getTransactionList";
-    private static String JSON_URL_Total="https://82b4-2405-201-3017-1073-a1a4-d584-6ee2-f5aa.ngrok.io/api/GetTotalPurchaseAndSell";
+    private static String JSON_URL="https://e4b3-2405-201-3017-1073-a1a4-d584-6ee2-f5aa.ngrok.io/api/getTransactionList";
+    private static String JSON_URL_Total="https://e4b3-2405-201-3017-1073-a1a4-d584-6ee2-f5aa.ngrok.io/api/GetTotalPurchaseAndSell";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +49,6 @@ public class MainActivity extends AppCompatActivity {
         modalList=new ArrayList<Model>();
         GetListTxn();
         GetTotal();
-        //recyclerView.setLayoutManager(linearLayoutManager);
-        //adapter=new Adapter(modalList ,getApplicationContext());
-        //recyclerView.setAdapter(adapter);
         purchase=findViewById(R.id.btnPurchase);
         sell=findViewById(R.id.btnsell);
 
@@ -61,6 +58,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,SecondActivity.class);
+                intent.putExtra("Type","Sell");
+                startActivity(intent);
+            }
+        });
+        purchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,SecondActivity.class);
+                intent.putExtra("Type","Purchase");
                 startActivity(intent);
             }
         });
